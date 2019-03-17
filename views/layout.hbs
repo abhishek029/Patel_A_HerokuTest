@@ -2,19 +2,44 @@
 <html>
   <head>
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="/stylesheets/master.css"/>
+    {{!-- bootstrap links --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    {{!-- end of links --}}
   </head>
-  <body>
-    <a href="/">Home</a>
-    <h1>Anything under me is being rendered dynamically from route</h1>
+  <body> 
+    <header class="row">
+      <img class="col" src="images/logo.svg" alt="logo">
+    </header>
     
-    {{!-- triple brackets is short hand for router-view --}}
-    {{{body}}}
+    <div class="row" id="promo">
+      {{{body}}}
 
-    <h3>I live under the router view</h3>
+      <section id="niagara">
+        
+        <h2 class="col text-right">Niagara Falls</h2>
 
-    <a href="/user1">User 1</a>
-    <a href="/user2">User 2</a>
+        <div class="col-sm-7 offset-sm-1 float-left text-center">
+
+          <p>Niagara Falls, Ontario, is a Canadian city at the famous waterfalls of the same name, linked with the U.S. by the Rainbow Bridge. Its site on the Niagara River's western shore overlooks the Horseshoe Falls, the cascades' most expansive section. Elevators take visitors to a lower, wetter vantage point behind the falls. A cliffside park features a promenade alongside 520-ft.-high Skylon Tower with an observation deck.</p>
+
+          <p>The falls are 27 kilometres (17 mi) north-northwest of Buffalo, New York, and 121 kilometres (75 mi) south-southeast of Toronto, between the twin cities of Niagara Falls, Ontario, and Niagara Falls, New York. Niagara Falls was formed when glaciers receded at the end of the Wisconsin glaciation (the last ice age), and water from the newly formed Great Lakes carved a path through the Niagara Escarpment en route to the Atlantic Ocean.</p>
+
+        </div>
+        <img class="col-sm-4 float-right" src="images/naiagra.jpg" alt="naiagra">
+      </section>
+
+      <section id="vancouver">
+        <h2 class="col text-left">Vancouver</h2>
+        <img class="col-sm-4 float-left img-responsive" src="images/vancouver.jpg" alt="vancouver">
+        <p class="col-sm-10 offset-sm-1 text-center">{{vancouver}}</p>
+      </section>
+
+    </div>
+
+    
   </body>
 </html>
