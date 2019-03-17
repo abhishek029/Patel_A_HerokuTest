@@ -12,5 +12,21 @@
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishek029/Patel_A_HerokuTest.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishek029/Patel_A_HerokuTest/issues"
+  },
+  "homepage": "https://github.com/abhishek029/Patel_A_HerokuTest#readme",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "sass": "^1.17.3"
   }
 }
