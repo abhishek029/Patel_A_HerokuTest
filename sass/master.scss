@@ -1,9 +1,47 @@
 @import '_vars';
-@import 'modules/_home';
-@import 'modules/_user';
+body{background:$bg-color;
+    color:#fff;
+    font-size:14px}
 
-a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
+/*# sourceMappingURL=master.css.map */
+
+ul li{
+    list-style: inline;
+    width: 50px;
+}
+
+#promo{
+    background: #efefef;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#promo h1{
+    padding: 50px;
+}
+#welcome{
+    color: black;
+}
+#niagara{
+    background-color: rgb(105, 91, 91);
+    color: #fff;
+    padding: 50px;
+}
+
+#niagara img{
+    padding-top: 80px;
+    padding-right: 80px;
+}
+
+#vancouver img,#cntower img{
+    padding-left: 80px;
+    padding-bottom: 50px;
+}
+
+section h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section p{
+    padding-top: 30px;
 }
